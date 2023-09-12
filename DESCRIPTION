@@ -6,11 +6,12 @@ Authors@R:
            comment = c(ORCID = "0000-0003-4781-4346"))
 Description: A client to interact with the APIs.guru API.
 License: MIT + file LICENSE
+URL: https://github.com/jonthegeek/apisguru,
+    https://jonthegeek.github.io/apisguru/
+BugReports: https://github.com/jonthegeek/apisguru/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/jonthegeek/apisguru
-BugReports: https://github.com/jonthegeek/apisguru/issues

@@ -16,6 +16,10 @@ knitr::opts_chunk$set(
 # apisguru
 
 <!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/apisguru)](https://CRAN.R-project.org/package=apisguru)
+[![Codecov test coverage](https://codecov.io/gh/jonthegeek/apisguru/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jonthegeek/apisguru?branch=main)
+[![R-CMD-check](https://github.com/jonthegeek/apisguru/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jonthegeek/apisguru/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 A client to interact with the APIs.guru API.
