@@ -11,8 +11,8 @@ A client to interact with the APIs.guru API.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/jonthegeek/apisguru}
   \item \url{https://jonthegeek.github.io/apisguru/}
+  \item \url{https://github.com/jonthegeek/apisguru}
   \item Report bugs at \url{https://github.com/jonthegeek/apisguru/issues}
 }
 
