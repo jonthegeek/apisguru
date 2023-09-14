@@ -4,9 +4,9 @@
 \name{apisguru-package}
 \alias{apisguru}
 \alias{apisguru-package}
-\title{apisguru: APIs.guru API Client}
+\title{apisguru: APIs.guru 'API' Client}
 \description{
-A client to interact with the APIs.guru API.
+A client to interact with the 'APIs.guru' 'API'.
 }
 \seealso{
 Useful links:
