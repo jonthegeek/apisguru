@@ -26,9 +26,11 @@ You can install the development version of apisguru from
 remotes::install_github("jonthegeek/apisguru")
 ```
 
-## Usage
+## Made with {beekeeper}
 
-Add usage information and examples here.
+This package is being developed using the
+[{beekeeper}](https://beekeeper.api2r.org/) package. Development is very
+active, and this package will likely change a lot in the coming weeks.
 
 ## Code of Conduct
 
