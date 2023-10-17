@@ -31,6 +31,8 @@ remotes::install_github("jonthegeek/apisguru")
 This package is being developed using the
 [{beekeeper}](https://beekeeper.api2r.org/) package. Development is very
 active, and this package will likely change a lot in the coming weeks.
+As part of the development of {beekeeper}, I’m updating this package
+manually to define what {beekeeper} should create.
 
 ## Code of Conduct
 
