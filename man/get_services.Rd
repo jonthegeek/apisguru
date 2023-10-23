@@ -4,7 +4,7 @@
 \alias{get_services}
 \title{List all serviceNames for a particular provider}
 \usage{
-get_services(parms = stop("Get these from the spec"))
+get_services(provider)
 }
 \value{
 FILL THIS FROM COMPONENTS

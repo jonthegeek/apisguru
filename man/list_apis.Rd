@@ -7,7 +7,7 @@
 list_apis()
 }
 \value{
-TBD
+A \code{\link[=schema_apis]{schema_apis()}} tibble.
 }
 \description{
 List all APIs in the directory. Returns links to the OpenAPI definitions for

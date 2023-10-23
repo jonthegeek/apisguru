@@ -4,11 +4,12 @@
 \alias{get_provider}
 \title{List all APIs for a particular provider}
 \usage{
-get_provider(parms = stop("Get these from the spec"))
+get_provider(provider)
 }
 \value{
 FILL THIS FROM COMPONENTS
 }
 \description{
-List all APIs in the directory for a particular providerName Returns links to the individual API entry for each API.
+List all APIs in the directory for a particular providerName. Returns links to
+the individual API entry for each API.
 }

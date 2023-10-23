@@ -4,7 +4,7 @@
 \alias{get_service_api}
 \title{Retrieve one version of a particular API with a serviceName.}
 \usage{
-get_service_api(parms = stop("Get these from the spec"))
+get_service_api(provider, service, api)
 }
 \value{
 FILL THIS FROM COMPONENTS

@@ -4,6 +4,16 @@
 #'
 #' @return FILL THIS FROM COMPONENTS
 #' @export
-get_services <- function(parms = stop("Get these from the spec")) {
-  call_guru_api(path = "/{provider}/services.json")
+get_services <- function(provider) {
+  provider <- stbl::stabilize_chr_scalar(
+    provider,
+    allow_null = FALSE,
+    allow_zero_length = FALSE,
+    allow_na = FALSE
+  )
+  unlist(
+    call_guru_api(
+      path = list("/{provider}/services.json", provider = provider)
+    )$data
+  )
 }

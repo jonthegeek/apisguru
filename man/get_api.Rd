@@ -4,11 +4,12 @@
 \alias{get_api}
 \title{Retrieve one version of a particular API}
 \usage{
-get_api(parms = stop("Get these from the spec"))
+get_api(provider, api)
 }
 \value{
 FILL THIS FROM COMPONENTS
 }
 \description{
-Returns the API entry for one specific version of an API where there is no serviceName.
+Returns the API entry for one specific version of an API where there is no
+serviceName.
 }

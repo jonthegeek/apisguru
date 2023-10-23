@@ -5,5 +5,5 @@
 #' @return FILL THIS FROM COMPONENTS
 #' @export
 get_providers <- function() {
-  call_guru_api(path = "/providers.json")
+  unlist(call_guru_api(path = "/providers.json")$data)
 }

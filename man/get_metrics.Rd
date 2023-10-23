@@ -7,8 +7,9 @@
 get_metrics()
 }
 \value{
-FILL THIS FROM COMPONENTS
+A \code{\link[=schema_metrics]{schema_metrics()}} list object.
 }
 \description{
-Some basic metrics for the entire directory. Just stunning numbers to put on a front page and are intended purely for WoW effect :)
+Some basic metrics for the entire directory. Just stunning numbers to put on
+a front page and are intended purely for WoW effect :)
 }
