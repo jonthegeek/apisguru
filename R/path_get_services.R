@@ -4,6 +4,6 @@
 #'
 #' @return FILL THIS FROM COMPONENTS
 #' @export
-guru_get_services <- function(parms = stop("Get these from the spec")) {
-  guru_call_api(path = "/{provider}/services.json")
+get_services <- function(parms = stop("Get these from the spec")) {
+  call_guru_api(path = "/{provider}/services.json")
 }

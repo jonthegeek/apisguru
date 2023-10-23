@@ -4,6 +4,6 @@
 #'
 #' @return FILL THIS FROM COMPONENTS
 #' @export
-guru_get_providers <- function() {
-  guru_call_api(path = "/providers.json")
+get_providers <- function() {
+  call_guru_api(path = "/providers.json")
 }

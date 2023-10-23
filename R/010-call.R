@@ -6,16 +6,10 @@
 #'
 #' @return The response from the endpoint.
 #' @export
-guru_call_api <- function(path,
-                          query = NULL,
-                          body = NULL,
-                          method = NULL) {
+call_guru_api <- function(path) {
   nectar::call_api(
     base_url = "https://api.apis.guru/v2",
     path = path,
-    query = query,
-    body = body,
-    method = method,
     user_agent = "apisguru (https://jonthegeek.github.io/apisguru/)"
   )
 }

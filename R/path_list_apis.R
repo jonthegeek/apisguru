@@ -6,8 +6,8 @@
 #' inside each object. This allows you to generate some simple views without
 #' needing to fetch the OpenAPI definition for each API.
 #'
-#' @return A [guru_schema_apis()] object.
+#' @return TBD
 #' @export
-guru_list_apis <- function() {
-  as_guru_schema_apis(guru_call_api(path = "/list.json"))
+list_apis <- function() {
+  as_schema_apis(call_guru_api(path = "/list.json"))
 }
