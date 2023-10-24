@@ -11,18 +11,8 @@
 #' @examplesIf interactive()
 #' get_api("apis.guru", "2.2.0")
 get_api <- function(provider, api) {
-  provider <- stbl::stabilize_chr_scalar(
-    provider,
-    allow_null = FALSE,
-    allow_zero_length = FALSE,
-    allow_na = FALSE
-  )
-  api <- stbl::stabilize_chr_scalar(
-    api,
-    allow_null = FALSE,
-    allow_zero_length = FALSE,
-    allow_na = FALSE
-  )
+  provider <- .validate_provider(provider)
+  api <- .validate_api(api)
   schema_api_version(
     call_guru_api(
       path = list(

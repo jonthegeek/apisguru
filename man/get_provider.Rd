@@ -11,7 +11,7 @@ get_provider(provider)
 "1password.com" or "apis.guru".}
 }
 \value{
-A \code{\link[=schema_apis]{schema_apis()}} tibble.
+A \code{\link[=schema_api_versions]{schema_api_versions()}} tibble.
 }
 \description{
 List all APIs in the directory for a particular providerName. Returns links

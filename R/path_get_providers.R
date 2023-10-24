@@ -8,5 +8,8 @@
 #' @examplesIf interactive()
 #' head(get_providers())
 get_providers <- function() {
-  unlist(call_guru_api(path = "/providers.json")$data)
+  .add_class(
+    unlist(call_guru_api(path = "/providers.json")$data),
+    "guru_providers"
+  )
 }

@@ -15,3 +15,10 @@ A one-row tibble describing the API.
 \description{
 Apply the ApiVersions schema to an API object.
 }
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+x <- call_guru_api("/specs/apis.guru/2.2.0.json")
+names(x)
+schema_api_version(x)
+\dontshow{\}) # examplesIf}
+}

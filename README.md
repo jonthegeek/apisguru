@@ -14,7 +14,7 @@ coverage](https://codecov.io/gh/jonthegeek/apisguru/branch/main/graph/badge.svg)
 [![R-CMD-check](https://github.com/jonthegeek/apisguru/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jonthegeek/apisguru/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-A client to interact with the APIs.guru API.
+A client to interact with the [APIs.guru](https://apis.guru) API.
 
 ## Installation
 
@@ -22,8 +22,8 @@ You can install the development version of apisguru from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("remotes")
-remotes::install_github("jonthegeek/apisguru")
+# install.packages("pak")
+pak::pak("jonthegeek/apisguru")
 ```
 
 ## Made with {beekeeper}

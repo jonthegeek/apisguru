@@ -8,7 +8,7 @@
 #' @return A validated list of metrics.
 #' @export
 schema_metrics <- function(x) {
-  tibblify::tibblify(x, spec = .schema_metrics_spec())
+  .tibblify(x, .schema_metrics_spec(), "guru_metrics")
 }
 
 .schema_metrics_spec <- function() {

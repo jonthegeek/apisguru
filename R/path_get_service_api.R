@@ -14,31 +14,17 @@
 #' @examplesIf interactive()
 #' test_result <- get_service_api("1password.com", "events", "1.0.0")
 get_service_api <- function(provider, service, api) {
-  provider <- stbl::stabilize_chr_scalar(
-    provider,
-    allow_null = FALSE,
-    allow_zero_length = FALSE,
-    allow_na = FALSE
-  )
-  service <- stbl::stabilize_chr_scalar(
-    service,
-    allow_null = FALSE,
-    allow_zero_length = FALSE,
-    allow_na = FALSE
-  )
-  api <- stbl::stabilize_chr_scalar(
-    api,
-    allow_null = FALSE,
-    allow_zero_length = FALSE,
-    allow_na = FALSE
-  )
-  # TODO: This is in-between the api schema and the apiversion schema. Grrr.
-  call_guru_api(
-    path = list(
-      "/specs/{provider}/{service}/{api}/openapi.json",
-      provider = provider,
-      service = service,
-      api = api
+  provider <- .validate_provider(provider)
+  service <- .stabilize_chr_scalar_non_empty(service)
+  api <- .validate_api(api)
+  rapid::as_rapid(
+    call_guru_api(
+      path = list(
+        "/specs/{provider}/{service}/{api}/openapi.json",
+        provider = provider,
+        service = service,
+        api = api
+      )
     )
   )
 }

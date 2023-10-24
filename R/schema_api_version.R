@@ -6,8 +6,34 @@
 #'
 #' @return A one-row tibble describing the API.
 #' @export
+#'
+#' @examplesIf interactive()
+#' x <- call_guru_api("/specs/apis.guru/2.2.0.json")
+#' names(x)
+#' schema_api_version(x)
 schema_api_version <- function(x) {
-  tibblify::tibblify(list(x), spec = .schema_api_version_spec())
+  .tibblify(list(x), .schema_api_version_spec(), "guru_api_version")
+}
+
+#' Description of all version of an API
+#'
+#' Apply the ApiVersions schema to multiple versions of an API object.
+#'
+#' @param x A named list of API versions.
+#'
+#' @return A tibble describing the API versions.
+#' @export
+#'
+#' @examplesIf interactive()
+#' x <- call_guru_api(path = "/apache.org.json")$apis
+#' names(x)
+#' schema_api_version(x)
+schema_api_versions <- function(x) {
+  .tibblify(
+    x,
+    tibblify::tspec_df(.names_to = "api", .schema_api_version_spec()),
+    "guru_api_versions"
+  )
 }
 
 .schema_api_version_spec <- function() {
