@@ -8,6 +8,9 @@
 #'
 #' @return A [schema_apis()] tibble.
 #' @export
+#'
+#' @examplesIf interactive()
+#' list_apis()
 list_apis <- function() {
   schema_apis(call_guru_api(path = "/list.json"))
 }

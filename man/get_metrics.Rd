@@ -13,3 +13,8 @@ A \code{\link[=schema_metrics]{schema_metrics()}} list object.
 Some basic metrics for the entire directory. Just stunning numbers to put on
 a front page and are intended purely for WoW effect :)
 }
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+get_metrics()
+\dontshow{\}) # examplesIf}
+}

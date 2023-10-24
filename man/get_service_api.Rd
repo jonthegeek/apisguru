@@ -7,19 +7,24 @@
 get_service_api(provider, service, api)
 }
 \arguments{
-\item{provider}{The provider of the API, such as "1password.com" or
-"apis.guru".}
+\item{provider}{A string describing the API provider, such as such as
+"1password.com" or "apis.guru".}
 
-\item{service}{The service name of the API. For example, in
-"1password.com:events", "events" is the service and "1password.com" is the
-provider.}
+\item{service}{A string describing the service name of the API. For example,
+in "1password.com:events", "events" is the service and "1password.com" is
+the provider.}
 
-\item{api}{The version of the API.}
+\item{api}{A string giving the version of the API, such as "2.2.0" or "v2".}
 }
 \value{
-FILL THIS FROM COMPONENTS
+A list in-between the schemas that should describe it.
 }
 \description{
 Returns the API entry for one specific version of an API where there is a
 serviceName.
+}
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+test_result <- get_service_api("1password.com", "events", "1.0.0")
+\dontshow{\}) # examplesIf}
 }

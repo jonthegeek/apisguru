@@ -7,13 +7,18 @@
 get_provider(provider)
 }
 \arguments{
-\item{provider}{The provider of the API, such as "1password.com" or
-"apis.guru".}
+\item{provider}{A string describing the API provider, such as such as
+"1password.com" or "apis.guru".}
 }
 \value{
-FILL THIS FROM COMPONENTS
+A \code{\link[=schema_apis]{schema_apis()}} tibble.
 }
 \description{
 List all APIs in the directory for a particular providerName. Returns links to
 the individual API entry for each API.
+}
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+head(get_provider())
+\dontshow{\}) # examplesIf}
 }

@@ -7,15 +7,20 @@
 get_api(provider, api)
 }
 \arguments{
-\item{provider}{The provider of the API, such as "1password.com" or
-"apis.guru".}
+\item{provider}{A string describing the API provider, such as such as
+"1password.com" or "apis.guru".}
 
-\item{api}{The version of the API.}
+\item{api}{A string giving the version of the API, such as "2.2.0" or "v2".}
 }
 \value{
-FILL THIS FROM COMPONENTS
+A \code{\link[=schema_api_version]{schema_api_version()}} tibble.
 }
 \description{
 Returns the API entry for one specific version of an API where there is no
 serviceName.
+}
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+get_api("apis.guru", "2.2.0")
+\dontshow{\}) # examplesIf}
 }

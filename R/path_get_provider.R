@@ -5,8 +5,11 @@
 #'
 #' @inheritParams .shared-parameters
 #'
-#' @return FILL THIS FROM COMPONENTS
+#' @return A [schema_apis()] tibble.
 #' @export
+#'
+#' @examplesIf interactive()
+#' head(get_provider())
 get_provider <- function(provider) {
   provider <- stbl::stabilize_chr_scalar(
     provider,

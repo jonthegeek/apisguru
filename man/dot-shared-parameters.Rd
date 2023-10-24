@@ -4,10 +4,10 @@
 \alias{.shared-parameters}
 \title{Parameters used in multiple functions}
 \arguments{
-\item{api}{The version of the API.}
+\item{api}{A string giving the version of the API, such as "2.2.0" or "v2".}
 
-\item{provider}{The provider of the API, such as "1password.com" or
-"apis.guru".}
+\item{provider}{A string describing the API provider, such as such as
+"1password.com" or "apis.guru".}
 }
 \description{
 Reused parameter definitions are gathered here for easier editing.

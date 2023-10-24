@@ -4,12 +4,15 @@
 #' serviceName.
 #'
 #' @inheritParams .shared-parameters
-#' @param service The service name of the API. For example, in
-#'   "1password.com:events", "events" is the service and "1password.com" is the
-#'   provider.
+#' @param service A string describing the service name of the API. For example,
+#'   in "1password.com:events", "events" is the service and "1password.com" is
+#'   the provider.
 #'
-#' @return FILL THIS FROM COMPONENTS
+#' @return A list in-between the schemas that should describe it.
 #' @export
+#'
+#' @examplesIf interactive()
+#' test_result <- get_service_api("1password.com", "events", "1.0.0")
 get_service_api <- function(provider, service, api) {
   provider <- stbl::stabilize_chr_scalar(
     provider,
@@ -29,6 +32,7 @@ get_service_api <- function(provider, service, api) {
     allow_zero_length = FALSE,
     allow_na = FALSE
   )
+  # TODO: This is in-between the api schema and the apiversion schema. Grrr.
   call_guru_api(
     path = list(
       "/specs/{provider}/{service}/{api}/openapi.json",

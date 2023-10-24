@@ -5,8 +5,11 @@
 #'
 #' @inheritParams .shared-parameters
 #'
-#' @return FILL THIS FROM COMPONENTS
+#' @return A [schema_api_version()] tibble.
 #' @export
+#'
+#' @examplesIf interactive()
+#' get_api("apis.guru", "2.2.0")
 get_api <- function(provider, api) {
   provider <- stbl::stabilize_chr_scalar(
     provider,

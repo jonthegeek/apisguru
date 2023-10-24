@@ -7,8 +7,13 @@
 get_providers()
 }
 \value{
-FILL THIS FROM COMPONENTS
+A character vector of provider names.
 }
 \description{
 List all the providers in the directory
+}
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+head(get_providers())
+\dontshow{\}) # examplesIf}
 }

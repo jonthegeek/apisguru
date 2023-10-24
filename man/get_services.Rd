@@ -7,12 +7,18 @@
 get_services(provider)
 }
 \arguments{
-\item{provider}{The provider of the API, such as "1password.com" or
-"apis.guru".}
+\item{provider}{A string describing the API provider, such as such as
+"1password.com" or "apis.guru".}
 }
 \value{
-FILL THIS FROM COMPONENTS
+A character vector of service names.
 }
 \description{
 List all serviceNames in the directory for a particular providerName
+}
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+get_services("1password.com")
+get_services("adyen.com")
+\dontshow{\}) # examplesIf}
 }

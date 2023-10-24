@@ -4,8 +4,12 @@
 #'
 #' @inheritParams .shared-parameters
 #'
-#' @return FILL THIS FROM COMPONENTS
+#' @return A character vector of service names.
 #' @export
+#'
+#' @examplesIf interactive()
+#' get_services("1password.com")
+#' get_services("adyen.com")
 get_services <- function(provider) {
   provider <- stbl::stabilize_chr_scalar(
     provider,

@@ -16,3 +16,8 @@ is explicitly marked. Some basic info from the OpenAPI definition is cached
 inside each object. This allows you to generate some simple views without
 needing to fetch the OpenAPI definition for each API.
 }
+\examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+list_apis()
+\dontshow{\}) # examplesIf}
+}

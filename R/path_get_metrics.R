@@ -5,6 +5,9 @@
 #'
 #' @return A [schema_metrics()] list object.
 #' @export
+#'
+#' @examplesIf interactive()
+#' get_metrics()
 get_metrics <- function() {
   schema_metrics(call_guru_api(path = "/metrics.json"))
 }
