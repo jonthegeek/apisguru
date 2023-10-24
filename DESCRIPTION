@@ -11,6 +11,7 @@ URL: https://jonthegeek.github.io/apisguru/,
 BugReports: https://github.com/jonthegeek/apisguru/issues
 Imports: 
     nectar,
+    rapid,
     rlang,
     stbl,
     tibblify,
