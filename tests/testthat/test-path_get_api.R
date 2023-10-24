@@ -4,7 +4,7 @@ with_mock_dir("api/path/get_api", {
       test_result <- get_api("apis.guru", "2.2.0")
       test_result
     })
-    expect_s3_class(test_result, "api_version")
+    expect_s3_class(test_result, "guru_api_version")
     expect_colnames(
       test_result,
       c(
