@@ -10,7 +10,11 @@ URL: https://jonthegeek.github.io/apisguru/,
     https://github.com/jonthegeek/apisguru
 BugReports: https://github.com/jonthegeek/apisguru/issues
 Imports: 
-    nectar
+    nectar,
+    rlang,
+    stbl,
+    tibblify,
+    vctrs
 Suggests: 
     beekeeper,
     httptest2,
