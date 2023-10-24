@@ -14,8 +14,8 @@ get_provider(provider)
 A \code{\link[=schema_apis]{schema_apis()}} tibble.
 }
 \description{
-List all APIs in the directory for a particular providerName. Returns links to
-the individual API entry for each API.
+List all APIs in the directory for a particular providerName. Returns links
+to the individual API entry for each API.
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
