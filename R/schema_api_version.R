@@ -7,7 +7,10 @@
 #' @return A one-row tibble describing the API.
 #' @export
 schema_api_version <- function(x) {
-  tibblify::tibblify(list(x), spec = .schema_api_version_spec())
+  .add_class(
+    tibblify::tibblify(list(x), spec = .schema_api_version_spec()),
+    "api_version"
+  )
 }
 
 .schema_api_version_spec <- function() {
