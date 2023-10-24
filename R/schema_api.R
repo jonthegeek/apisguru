@@ -32,7 +32,7 @@
 #' )
 #' schema_api(x)
 schema_api <- function(x) {
-  tibblify::tibblify(list(x), spec = .schema_api_spec())
+  .tibblify(list(x), .schema_api_spec(), "guru_api")
 }
 
 .schema_api_spec <- function() {

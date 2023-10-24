@@ -7,18 +7,13 @@
 #' @return A one-row tibble describing the API.
 #' @export
 schema_api_version <- function(x) {
-  .add_class(
-    tibblify::tibblify(list(x), spec = .schema_api_version_spec()),
-    "guru_api_version"
-  )
+  .tibblify(list(x), .schema_api_version_spec(), "guru_api_version")
 }
 
 schema_api_versions <- function(x) {
-  .add_class(
-    tibblify::tibblify(
-      x,
-      spec = tibblify::tspec_df(.names_to = "api", .schema_api_version_spec())
-    ),
+  .tibblify(
+    x,
+    tibblify::tspec_df(.names_to = "api", .schema_api_version_spec()),
     "guru_api_versions"
   )
 }

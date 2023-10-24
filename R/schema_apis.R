@@ -50,8 +50,9 @@
 #' )
 #' schema_apis(x)
 schema_apis <- function(x = list()) {
-  tibblify::tibblify(
+  .tibblify(
     x,
-    spec = tibblify::tspec_df(.names_to = "name", .schema_api_spec())
+    tibblify::tspec_df(.names_to = "name", .schema_api_spec()),
+    "guru_apis"
   )
 }
