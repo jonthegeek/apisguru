@@ -10,3 +10,4 @@
 ^pkgdown$
 ^_beekeeper\.yml$
 ^_beekeeper_rapid\.rds$
+^template\.R$
