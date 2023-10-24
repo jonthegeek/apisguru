@@ -28,9 +28,45 @@
     <loc>https://jonthegeek.github.io/apisguru/reference/apisguru-package.html</loc>
   </url>
   <url>
-    <loc>https://jonthegeek.github.io/apisguru/reference/guru_call_api.html</loc>
+    <loc>https://jonthegeek.github.io/apisguru/reference/call_guru_api.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/dot-shared-parameters.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/get_api.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/get_metrics.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/get_provider.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/get_providers.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/get_service_api.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/get_services.html</loc>
   </url>
   <url>
     <loc>https://jonthegeek.github.io/apisguru/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/list_apis.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/schema_api.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/schema_api_version.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/schema_apis.html</loc>
+  </url>
+  <url>
+    <loc>https://jonthegeek.github.io/apisguru/reference/schema_metrics.html</loc>
   </url>
 </urlset>
