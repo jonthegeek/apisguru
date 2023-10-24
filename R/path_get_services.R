@@ -2,6 +2,8 @@
 #'
 #' List all serviceNames in the directory for a particular providerName
 #'
+#' @inheritParams .shared-parameters
+#'
 #' @return FILL THIS FROM COMPONENTS
 #' @export
 get_services <- function(provider) {

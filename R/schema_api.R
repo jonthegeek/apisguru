@@ -8,7 +8,6 @@
 #' @export
 #'
 #' @examples
-#' schema_api()
 #' x <- list(
 #'   added = "2016-01-01T12:34:56Z",
 #'   preferred = "v2",

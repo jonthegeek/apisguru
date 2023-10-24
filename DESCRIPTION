@@ -12,6 +12,7 @@ BugReports: https://github.com/jonthegeek/apisguru/issues
 Imports: 
     nectar,
     rlang,
+    stbl,
     tibblify,
     vctrs
 Suggests: 

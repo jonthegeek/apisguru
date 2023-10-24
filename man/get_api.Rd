@@ -6,6 +6,12 @@
 \usage{
 get_api(provider, api)
 }
+\arguments{
+\item{provider}{The provider of the API, such as "1password.com" or
+"apis.guru".}
+
+\item{api}{The version of the API.}
+}
 \value{
 FILL THIS FROM COMPONENTS
 }

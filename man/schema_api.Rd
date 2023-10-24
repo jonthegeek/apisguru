@@ -16,7 +16,6 @@ A one-row tibble describing the API.
 Apply the API schema to the details of a single API.
 }
 \examples{
-schema_api()
 x <- list(
   added = "2016-01-01T12:34:56Z",
   preferred = "v2",

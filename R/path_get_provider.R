@@ -3,6 +3,8 @@
 #' List all APIs in the directory for a particular providerName. Returns links to
 #' the individual API entry for each API.
 #'
+#' @inheritParams .shared-parameters
+#'
 #' @return FILL THIS FROM COMPONENTS
 #' @export
 get_provider <- function(provider) {

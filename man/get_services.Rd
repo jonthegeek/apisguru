@@ -6,6 +6,10 @@
 \usage{
 get_services(provider)
 }
+\arguments{
+\item{provider}{The provider of the API, such as "1password.com" or
+"apis.guru".}
+}
 \value{
 FILL THIS FROM COMPONENTS
 }

@@ -3,6 +3,8 @@
 #' Returns the API entry for one specific version of an API where there is no
 #' serviceName.
 #'
+#' @inheritParams .shared-parameters
+#'
 #' @return FILL THIS FROM COMPONENTS
 #' @export
 get_api <- function(provider, api) {

@@ -6,9 +6,20 @@
 \usage{
 get_service_api(provider, service, api)
 }
+\arguments{
+\item{provider}{The provider of the API, such as "1password.com" or
+"apis.guru".}
+
+\item{service}{The service name of the API. For example, in
+"1password.com:events", "events" is the service and "1password.com" is the
+provider.}
+
+\item{api}{The version of the API.}
+}
 \value{
 FILL THIS FROM COMPONENTS
 }
 \description{
-Returns the API entry for one specific version of an API where there is a serviceName.
+Returns the API entry for one specific version of an API where there is a
+serviceName.
 }

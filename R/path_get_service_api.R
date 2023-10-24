@@ -1,6 +1,12 @@
 #' Retrieve one version of a particular API with a serviceName.
 #'
-#' Returns the API entry for one specific version of an API where there is a serviceName.
+#' Returns the API entry for one specific version of an API where there is a
+#' serviceName.
+#'
+#' @inheritParams .shared-parameters
+#' @param service The service name of the API. For example, in
+#'   "1password.com:events", "events" is the service and "1password.com" is the
+#'   provider.
 #'
 #' @return FILL THIS FROM COMPONENTS
 #' @export
