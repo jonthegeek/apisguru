@@ -9,7 +9,17 @@
 schema_api_version <- function(x) {
   .add_class(
     tibblify::tibblify(list(x), spec = .schema_api_version_spec()),
-    "api_version"
+    "guru_api_version"
+  )
+}
+
+schema_api_versions <- function(x) {
+  .add_class(
+    tibblify::tibblify(
+      x,
+      spec = tibblify::tspec_df(.names_to = "api", .schema_api_version_spec())
+    ),
+    "guru_api_versions"
   )
 }
 
