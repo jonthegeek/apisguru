@@ -11,7 +11,7 @@
 #' @examplesIf interactive()
 #' head(get_provider())
 get_provider <- function(provider) {
-  provider <- .validate_provider(provider)
+  provider <- nectar::stabilize_string(provider)
   schema_api_versions(
     call_guru_api(path = list("/{provider}.json", provider = provider))$apis
   )

@@ -11,7 +11,7 @@
 #' get_services("1password.com")
 #' get_services("adyen.com")
 get_services <- function(provider) {
-  provider <- .validate_provider(provider)
+  provider <- nectar::stabilize_string(provider)
   .add_class(
     unlist(
       call_guru_api(
