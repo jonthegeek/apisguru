@@ -14,9 +14,9 @@
 #' @examplesIf interactive()
 #' test_result <- get_service_api("1password.com", "events", "1.0.0")
 get_service_api <- function(provider, service, api) {
-  provider <- .validate_provider(provider)
-  service <- .stabilize_chr_scalar_non_empty(service)
-  api <- .validate_api(api)
+  provider <- nectar::stabilize_string(provider)
+  service <- nectar::stabilize_string(service)
+  api <- nectar::stabilize_string(api)
   rapid::as_rapid(
     call_guru_api(
       path = list(

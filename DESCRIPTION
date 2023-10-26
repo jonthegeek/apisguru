@@ -13,7 +13,6 @@ Imports:
     nectar,
     rapid,
     rlang,
-    stbl,
     tibblify,
     vctrs
 Suggests: 
