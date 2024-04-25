@@ -12,6 +12,7 @@ BugReports: https://github.com/jonthegeek/apisguru/issues
 Imports: 
     httr2,
     nectar (>= 0.0.0.9003),
+    purrr,
     rapid,
     rlang,
     tibblify,
