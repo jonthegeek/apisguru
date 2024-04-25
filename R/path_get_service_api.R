@@ -17,14 +17,28 @@ get_service_api <- function(provider, service, api) {
   provider <- nectar::stabilize_string(provider)
   service <- nectar::stabilize_string(service)
   api <- nectar::stabilize_string(api)
-  rapid::as_rapid(
-    call_guru_api(
-      path = list(
-        "/specs/{provider}/{service}/{api}/openapi.json",
-        provider = provider,
-        service = service,
-        api = api
-      )
+  raw_result <- call_guru_api(
+    path = list(
+      "/specs/{provider}/{service}/{api}/openapi.json",
+      provider = provider,
+      service = service,
+      api = api
     )
   )
+  # Work around a tibblify dev version bug.
+  raw_result$paths <- .clean_path_tags(raw_result$paths)
+  rapid::as_rapid(raw_result)
+}
+
+.clean_path_tags <- function(paths) {
+  purrr::map(paths, .clean_path_tag)
+}
+
+.clean_path_tag <- function(path) {
+  purrr::map(path, .clean_path_method_tag)
+}
+
+.clean_path_method_tag <- function(method) {
+  method$tags <- unlist(method$tags)
+  method
 }
