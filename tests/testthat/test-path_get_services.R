@@ -5,9 +5,11 @@ with_mock_dir("api/path/get_services", {
     expect_gte(length(test_result), 25)
     expect_contains(
       test_result,
-      c("BalancePlatformConfigurationNotification-v1", "BalancePlatformService",
+      c(
+        "BalancePlatformConfigurationNotification-v1", "BalancePlatformService",
         "HopService", "MarketPayNotificationService", "PayoutService",
-        "TfmAPIService")
+        "TfmAPIService"
+      )
     )
   })
 })
