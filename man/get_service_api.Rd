@@ -24,7 +24,7 @@ Returns the API entry for one specific version of an API where there is a
 serviceName.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 test_result <- get_service_api("1password.com", "events", "1.0.0")
 \dontshow{\}) # examplesIf}
 }

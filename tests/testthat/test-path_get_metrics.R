@@ -5,9 +5,20 @@ with_mock_dir("api/path/get_metrics", {
     expect_named(
       test_result,
       c(
-        "numSpecs", "numAPIs", "numEndpoints", "unreachable", "invalid",
-        "unofficial", "fixes", "fixedPct", "datasets", "stars", "issues",
-        "thisWeek", "numDrivers", "numProviders"
+        "numSpecs",
+        "numAPIs",
+        "numEndpoints",
+        "unreachable",
+        "invalid",
+        "unofficial",
+        "fixes",
+        "fixedPct",
+        "datasets",
+        "stars",
+        "issues",
+        "thisWeek",
+        "numDrivers",
+        "numProviders"
       )
     )
   })

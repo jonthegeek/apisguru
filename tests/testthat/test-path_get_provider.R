@@ -8,8 +8,15 @@ with_mock_dir("api/path/get_provider", {
     expect_colnames(
       test_result,
       c(
-        "api", "added", "info", "updated", "swaggerUrl", "swaggerYamlUrl",
-        "openapiVer", "link", "externalDocs"
+        "api",
+        "added",
+        "info",
+        "updated",
+        "swaggerUrl",
+        "swaggerYamlUrl",
+        "openapiVer",
+        "link",
+        "externalDocs"
       )
     )
   })

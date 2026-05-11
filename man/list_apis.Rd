@@ -17,7 +17,7 @@ inside each object. This allows you to generate some simple views without
 needing to fetch the OpenAPI definition for each API.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 list_apis()
 \dontshow{\}) # examplesIf}
 }

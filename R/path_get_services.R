@@ -11,7 +11,7 @@
 #' get_services("1password.com")
 #' get_services("adyen.com")
 get_services <- function(provider) {
-  provider <- nectar::stabilize_string(provider)
+  provider <- stbl::stabilize_character_scalar(provider)
   .add_class(
     unlist(
       call_guru_api(

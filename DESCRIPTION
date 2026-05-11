@@ -1,7 +1,7 @@
 Package: apisguru
 Title: APIs.guru 'API' Client
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person("Jon", "Harmon", , "jonthegeek@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4781-4346"))
 Description: A client to interact with the 'APIs.guru' 'API'.
@@ -9,23 +9,22 @@ License: MIT + file LICENSE
 URL: https://jonthegeek.github.io/apisguru/,
     https://github.com/jonthegeek/apisguru
 BugReports: https://github.com/jonthegeek/apisguru/issues
-Imports: 
+Imports:
     httr2,
-    nectar (>= 0.0.0.9003),
+    nectar (>= 0.0.0.9007),
     purrr,
-    rapid,
+    rapid (>= 0.0.0.9003),
     rlang,
-    tibblify,
+    stbl (>= 0.3.0),
+    tibblify (>= 0.4.0),
     vctrs
-Suggests: 
-    beekeeper,
+Suggests:
     httptest2,
     testthat (>= 3.0.0)
 Remotes:
-    jonthegeek/beekeeper,
     jonthegeek/nectar,
     jonthegeek/rapid
+Config/roxygen2/version: 8.0.0
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1

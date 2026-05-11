@@ -11,3 +11,8 @@
 ^_beekeeper\.yml$
 ^_beekeeper_rapid\.rds$
 ^template\.R$
+^\.positai$
+^\.claude$
+^AGENTS\.md$
+^[.]?air[.]toml$
+^\.vscode$

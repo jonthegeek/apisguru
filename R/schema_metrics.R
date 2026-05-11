@@ -16,21 +16,21 @@ schema_metrics <- function(x) {
     tibblify::tib_int("numSpecs"),
     tibblify::tib_int("numAPIs"),
     tibblify::tib_int("numEndpoints"),
-    tibblify::tib_int("unreachable", required = FALSE),
-    tibblify::tib_int("invalid", required = FALSE),
-    tibblify::tib_int("unofficial", required = FALSE),
-    tibblify::tib_int("fixes", required = FALSE),
-    tibblify::tib_int("fixedPct", required = FALSE),
-    tibblify::tib_variant("datasets", required = FALSE),
-    tibblify::tib_int("stars", required = FALSE),
-    tibblify::tib_int("issues", required = FALSE),
+    tibblify::tib_int("unreachable", .required = FALSE),
+    tibblify::tib_int("invalid", .required = FALSE),
+    tibblify::tib_int("unofficial", .required = FALSE),
+    tibblify::tib_int("fixes", .required = FALSE),
+    tibblify::tib_int("fixedPct", .required = FALSE),
+    tibblify::tib_variant("datasets", .required = FALSE),
+    tibblify::tib_int("stars", .required = FALSE),
+    tibblify::tib_int("issues", .required = FALSE),
     tibblify::tib_row(
       "thisWeek",
       tibblify::tib_int("added"),
       tibblify::tib_int("updated"),
       .required = FALSE
     ),
-    tibblify::tib_int("numDrivers", required = FALSE),
-    tibblify::tib_int("numProviders", required = FALSE)
+    tibblify::tib_int("numDrivers", .required = FALSE),
+    tibblify::tib_int("numProviders", .required = FALSE)
   )
 }

@@ -17,7 +17,7 @@ A character vector of service names.
 List all serviceNames in the directory for a particular providerName
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 get_services("1password.com")
 get_services("adyen.com")
 \dontshow{\}) # examplesIf}

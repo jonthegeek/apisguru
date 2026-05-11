@@ -18,7 +18,7 @@ List all APIs in the directory for a particular providerName. Returns links
 to the individual API entry for each API.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 head(get_provider())
 \dontshow{\}) # examplesIf}
 }
