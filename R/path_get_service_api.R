@@ -14,9 +14,9 @@
 #' @examplesIf interactive()
 #' test_result <- get_service_api("1password.com", "events", "1.0.0")
 get_service_api <- function(provider, service, api) {
-  provider <- nectar::stabilize_string(provider)
-  service <- nectar::stabilize_string(service)
-  api <- nectar::stabilize_string(api)
+  provider <- stbl::stabilize_character_scalar(provider)
+  service <- stbl::stabilize_character_scalar(service)
+  api <- stbl::stabilize_character_scalar(api)
   raw_result <- call_guru_api(
     path = list(
       "/specs/{provider}/{service}/{api}/openapi.json",

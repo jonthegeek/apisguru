@@ -7,8 +7,10 @@
 call_guru_api(path)
 }
 \arguments{
-\item{path}{The route to an API endpoint. Optionally, a list with the path
-plus variables to \code{\link[glue:glue]{glue::glue()}} into the path.}
+\item{path}{(\code{character} or \code{list}) The route to an API endpoint. Optionally,
+a list or character vector with the path as one or more unnamed arguments
+(which will be concatenated with "/") plus named arguments to
+\code{\link[glue:glue]{glue::glue()}} into the path.}
 }
 \value{
 The response from the endpoint.

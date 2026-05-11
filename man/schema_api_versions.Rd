@@ -16,7 +16,7 @@ A tibble describing the API versions.
 Apply the ApiVersions schema to multiple versions of an API object.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 x <- call_guru_api(path = "/apache.org.json")$apis
 names(x)
 schema_api_version(x)

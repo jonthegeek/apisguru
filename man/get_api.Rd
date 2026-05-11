@@ -20,7 +20,7 @@ Returns the API entry for one specific version of an API where there is no
 serviceName.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 get_api("apis.guru", "2.2.0")
 \dontshow{\}) # examplesIf}
 }

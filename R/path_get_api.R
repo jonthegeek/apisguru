@@ -11,8 +11,8 @@
 #' @examplesIf interactive()
 #' get_api("apis.guru", "2.2.0")
 get_api <- function(provider, api) {
-  provider <- nectar::stabilize_string(provider)
-  api <- nectar::stabilize_string(api)
+  provider <- stbl::stabilize_character_scalar(provider)
+  api <- stbl::stabilize_character_scalar(api)
   schema_api_version(
     call_guru_api(
       path = list(

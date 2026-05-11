@@ -1,8 +1,5 @@
 # Set up the basic call once at package build.
-req_guru_base <- nectar::req_setup(
-  "https://api.apis.guru/v2",
-  user_agent = "apisguru (https://jonthegeek.github.io/apisguru/)"
-)
+req_guru_base <- nectar::req_init("https://api.apis.guru/v2")
 
 #' Call the APIs.guru API
 #'

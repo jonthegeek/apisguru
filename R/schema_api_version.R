@@ -44,18 +44,18 @@ schema_api_versions <- function(x) {
     tibblify::tib_chr("swaggerUrl"),
     tibblify::tib_chr("swaggerYamlUrl"),
     tibblify::tib_chr("openapiVer"),
-    tibblify::tib_chr("link", required = FALSE),
-    tibblify::tib_variant("externalDocs", required = FALSE)
+    tibblify::tib_chr("link", .required = FALSE),
+    tibblify::tib_variant("externalDocs", .required = FALSE)
   )
 }
 
-.tib_datetime <- function(key, ..., required = TRUE) {
+.tib_datetime <- function(.key, ..., .required = TRUE) {
   tibblify::tib_scalar(
-    key = key,
-    ptype = vctrs::new_datetime(tzone = "UTC"),
-    required = required,
-    ptype_inner = character(),
-    transform = .quick_datetime,
+    .key = .key,
+    .ptype = vctrs::new_datetime(tzone = "UTC"),
+    .required = .required,
+    .ptype_inner = character(),
+    .transform = .quick_datetime,
     ...
   )
 }
