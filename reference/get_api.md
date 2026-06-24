@@ -1,35 +1,47 @@
 # Retrieve one version of a particular API
 
-Returns the API entry for one specific version of an API where there is
-no serviceName.
+Returns the API entry for one specific version of an API.
 
 ## Usage
 
 ``` r
-get_api(provider, api)
+get_api(provider, version, max_reqs = Inf, max_tries_per_req = 3)
+
+req_get_api(provider, version)
+
+tidy_policy_get_api()
 ```
 
 ## Arguments
 
 - provider:
 
-  A string describing the API provider, such as such as "1password.com"
-  or "apis.guru".
+  (length-1 `character`)
 
-- api:
+- version:
 
-  A string giving the version of the API, such as "2.2.0" or "v2".
+  (length-1 `character`)
+
+- max_reqs:
+
+  (length-1 `integer`) The maximum number of separate requests to
+  perform. Passed on to
+  [`nectar::req_perform_opinionated()`](https://nectar.api2r.org/reference/req_perform_opinionated.html).
+
+- max_tries_per_req:
+
+  (length-1 `integer`) The maximum number of times to attempt each
+  individual request. Passed on to
+  [`nectar::req_perform_opinionated()`](https://nectar.api2r.org/reference/req_perform_opinionated.html).
 
 ## Value
 
-A
-[`schema_api_version()`](https://jonthegeek.github.io/apisguru/reference/schema_api_version.md)
-tibble.
+`get_api()`: The API response.
 
-## Examples
+`req_get_api()`: (`httr2_request`) A
+[`httr2::request()`](https://httr2.r-lib.org/reference/request.html)
+object.
 
-``` r
-if (FALSE) { # interactive()
-get_api("apis.guru", "2.2.0")
-}
-```
+`tidy_policy_get_api()`: (`nectar_tidy_policy`) A list like the ones
+returned by
+[`nectar::tidy_policy_prepare()`](https://nectar.api2r.org/reference/tidy_policy_prepare.html).

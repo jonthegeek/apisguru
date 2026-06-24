@@ -1,10 +1,25 @@
-# Shared parameters
+# Parameters used in multiple functions
 
-These parameters are used in multiple functions. They are defined here
-to make them easier to import and to find.
+Reused parameter definitions are gathered here for easier editing.
 
 ## Arguments
 
-- call:
+- max_reqs:
 
-  (`environment`) The caller environment for error messages.
+  (length-1 `integer`) The maximum number of separate requests to
+  perform. Passed on to
+  [`nectar::req_perform_opinionated()`](https://nectar.api2r.org/reference/req_perform_opinionated.html).
+
+- max_tries_per_req:
+
+  (length-1 `integer`) The maximum number of times to attempt each
+  individual request. Passed on to
+  [`nectar::req_perform_opinionated()`](https://nectar.api2r.org/reference/req_perform_opinionated.html).
+
+- req:
+
+  (`httr2_request`) The request object to modify.
+
+- ...:
+
+  These dots are for future extensions and must be empty.

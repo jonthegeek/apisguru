@@ -1,24 +1,40 @@
 # Get basic metrics
 
-Some basic metrics for the entire directory. Just stunning numbers to
-put on a front page and are intended purely for WoW effect :)
+Some basic metrics for the entire [apis.guru](https://apis.guru)
+directory.
 
 ## Usage
 
 ``` r
-get_metrics()
+get_metrics(max_reqs = Inf, max_tries_per_req = 3)
+
+req_get_metrics()
+
+tidy_policy_get_metrics()
 ```
+
+## Arguments
+
+- max_reqs:
+
+  (length-1 `integer`) The maximum number of separate requests to
+  perform. Passed on to
+  [`nectar::req_perform_opinionated()`](https://nectar.api2r.org/reference/req_perform_opinionated.html).
+
+- max_tries_per_req:
+
+  (length-1 `integer`) The maximum number of times to attempt each
+  individual request. Passed on to
+  [`nectar::req_perform_opinionated()`](https://nectar.api2r.org/reference/req_perform_opinionated.html).
 
 ## Value
 
-A
-[`schema_metrics()`](https://jonthegeek.github.io/apisguru/reference/schema_metrics.md)
-list object.
+`get_metrics()`: The API response.
 
-## Examples
+`req_get_metrics()`: (`httr2_request`) A
+[`httr2::request()`](https://httr2.r-lib.org/reference/request.html)
+object.
 
-``` r
-if (FALSE) { # interactive()
-get_metrics()
-}
-```
+`tidy_policy_get_metrics()`: (`nectar_tidy_policy`) A list like the ones
+returned by
+[`nectar::tidy_policy_prepare()`](https://nectar.api2r.org/reference/tidy_policy_prepare.html).
