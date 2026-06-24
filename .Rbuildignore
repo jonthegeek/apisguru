@@ -8,11 +8,13 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
-^_beekeeper\.yml$
-^_beekeeper_rapid\.rds$
 ^template\.R$
 ^\.positai$
 ^\.claude$
 ^AGENTS\.md$
 ^[.]?air[.]toml$
 ^\.vscode$
+^bk\.R$
+^_beekeeper_rapid\.rds$
+^_beekeeper\.yml$
+^_beekeeper_security\.yml$
